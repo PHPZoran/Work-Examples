@@ -1,0 +1,137 @@
+.panel-group {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+.section-header {
+    background-color: #dddddd;
+}
+
+hr {
+    margin-top: 3px;
+    margin-bottom: 6px;
+}
+
+* {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 13px;
+}
+
+.navbar-fixed-bottom {
+    height: 20px !important;
+    background-color: #164891;
+    font-size: 12px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.table-container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*Loader start*/
+
+@-webkit-keyframes ball-beat {
+    50% {
+        opacity: 0.2;
+        -webkit-transform: scale(0.75);
+        transform: scale(0.75);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes ball-beat {
+    50% {
+        opacity: 0.2;
+        -webkit-transform: scale(0.75);
+        transform: scale(0.75);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.ball-beat > div {
+    background-color: #2196f3;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    margin: 3px;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    display: inline-block;
+    -webkit-animation: ball-beat 0.7s 0s infinite linear;
+    animation: ball-beat 0.7s 0s infinite linear;
+}
+
+.ball-beat.ball-beat-small > div {
+    width: 10px;
+    height: 10px;
+}
+
+.ball-beat > div:nth-child(2n-1) {
+    -webkit-animation-delay: -0.35s !important;
+    animation-delay: -0.35s !important;
+}
+
+/*Loader End*/
+
+.logo-container {
+    position: relative;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    display: -webkit-box;
+}
+
+.scale-image {
+    display: block;
+    width: auto;
+    max-width: 75%;
+}
+
+.card-group {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.nav-link {
+    color: #486f98;
+}
+
+#appointment_list_view > thead > tr > th, #appointment_list_view > tbody > tr > td {
+    font-size: smaller !important;
+}
+
+.modal-lg {
+    max-width: 98% !important;
+    margin: auto;
+}
+
+
+/* custom css by Benjamin */
+
+/*remove bootstrap td theming */
+
+.table-striped tbody tr:nth-of-type(odd) {
+	background-color: unset;
+
+/* handles displaying multiple modals - show latest modal on the top of the others */
+.modal:nth-of-type(even) {
+    z-index: 1042 !important;
+}
+
+.modal-backdrop.in:nth-of-type(even) {
+    z-index: 1041 !important;
+}
