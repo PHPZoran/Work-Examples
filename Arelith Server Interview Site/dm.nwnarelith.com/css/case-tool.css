@@ -1,0 +1,280 @@
+* {
+  font-family: calibri;
+/*  color: red;*/
+  /*background-color: rgb(42,47,51);*/
+/*  color:white;*/
+}
+
+h1, h2, h3, h4{
+  margin: 0 auto;
+}
+
+table, h2, tr, td, a, button, .end{
+ /*background-color: rgb(66,70,79);*/
+ padding:15px;
+ /*color: white;*/
+}
+/*.footer{
+  background-color: rgb(66,70,79);
+  padding: 15px;
+  height: 150px;
+  margin-bottom: 0.0em;
+  padding-bottom: 15px;
+}*/
+hr{
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 0.0em;
+  margin-right: 0.0em;
+  border-style: inset;
+  border-width: 1px;
+}
+
+.separator{
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 10px;
+}
+
+.mention {
+  width: 150px;
+  margin: 0 auto;
+  clear: both;
+}
+.mention input {
+  width: 100%;
+  margin: 0 auto;
+  clear: both;
+}
+
+.cutebut {
+  width: 80px;
+  margin: 0 auto;
+  clear: both;
+}
+.cutebut input{
+  width: 100%;
+  margin: 0 auto;
+  clear:both;
+}
+
+.key {
+  width: 80px;
+  margin: 0 auto;
+  clear: both;
+}
+.key input {
+  width: 100%;
+  margin: 0 auto;
+  clear: both;
+}
+
+.thread {
+  width: 300px;
+  margin: 0 auto;
+  clear: both;
+}
+.thread input{
+  width: 100%;
+  margin: 0 auto;
+  clear: both;
+}
+
+button {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  color: #fff;
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+  margin-bottom: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+button:hover {
+  color: #fff;
+  background-color: #138496;
+  border-color: #17a2b8;
+}
+
+h4 {
+  color: red;
+}
+
+.success{
+  color: green;
+}
+
+.success input{
+  color: green;
+}
+
+#playerInfo{
+  margin: 0 auto;
+  text-align: center;
+  align: center;
+  justify-content: center;
+}
+
+#playerInfoTable{
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px outset #138496;
+  background-color:#FFFFE0;
+}
+
+#playerInfoTable h3{
+  text-decoration:underline;
+}
+
+/* #infoTable div{
+  text-align:center;
+  align-items: center;
+  justify-content: center;
+  word-spacing: 2px;
+} */
+.pcinfo{
+  margin-bottom:5%;
+}
+
+.pcinfo h1{
+  text-align:center;
+  align-items: center;
+  justify-content: center;
+  word-spacing: 2px;
+}
+.pcinfo h2{
+  text-align: initial;
+  align-items: initial;
+  justify-content: initial;
+  word-spacing: initial;
+  font-weight: normal;
+  padding: 0px;
+}
+
+/* .pcinfo span {
+  padding-left: 20%;
+} */
+
+.pcinfo table{
+  margin: 0 auto;
+  padding: 0px;
+  width: 90%;
+  font-size: 1.35rem;
+ border-collapse:collapse;
+
+
+  /* transform: translate(-25px, 0px); */
+}
+
+
+.pcinfo tr{
+
+ /* padding: 0px;*/
+}
+
+.pcinfo td{
+ /* padding: 0px;*/
+   border-bottom: 1px solid #000;
+}
+
+.pcheader{
+  padding-top: 20px;
+  border-bottom:4px solid black;
+}
+.pcheader td{
+  border:1px solid black;
+}
+
+.quarterinfo h2{
+  font-weight: normal;
+}
+
+.quarterinfo table{
+  width: 90%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  word-spacing: 2px;
+
+  margin-top:1%;
+  margin-bottom:1%;
+  border-collapse:collapse;
+  border-bottom:3px solid black;
+}
+
+.q
+.factioninfo h2{
+  font-weight: normal;
+}
+
+.factioninfo table{
+  width: 90%;
+  text-align: center;
+  align-items: center;
+  justify-content:center;
+  word-spacing: 2px;
+    border-collapse:collapse;
+  border-bottom:3px solid black;
+}
+
+.factioninfo a{
+  text-decoration:none;
+}
+.factioninfo a:hover{
+  text-decoration:underline;
+}
+
+.less_than_sixteen{
+  background-color: orange;
+}
+.greater_than_fifteen{
+  background-color:red;
+}
+
+#orange{
+  background-color: orange;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 0.2px 0.2px 0.2px black;
+}
+
+#red{
+  background-color: red;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 0.2px 0.2px 0.2px black;
+}
+
+#bbcode{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#bbcodetext{
+  margin: 0 auto;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}

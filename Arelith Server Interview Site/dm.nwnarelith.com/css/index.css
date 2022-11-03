@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap');
+@font-face {font-family: Dalelands; src: url('Dalelands Uncial.otf');}
+
+body {
+  /* font-family: 'Alfa Slab One', cursive; */
+  /* background-image: linear-gradient(to bottom, #1c1a1a, #4d4c4c) */
+  background-image: linear-gradient(to right, black, #242424);
+  margin: 0;
+  overflow-x: hidden;
+}
+.tools{
+}
+
+html{font-size:100%;}
+@media(min-width:60em){html{font-size: 100%}}
+
+.userinfo {
+  color: white;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 150%;
+  width: 100%;
+  padding: 5px;
+}
+
+.sub-main{
+  width: 30%;
+  margin:22px;
+  float: left;
+}
+
+form {
+  padding-top:5px;
+}
+
+.logout {
+  border-radius: 4px;
+  background-color:#d35400;
+  border: none;
+  padding: 0px;
+  width: 150px;
+  transition: all 0.5s;
+}
+
+.logout{
+  color:#fff;
+  text-align: center;
+  padding: 2px;
+  margin-top: 5px;
+}
+
+.logout{
+  text-align: center;
+  cursor: pointer;
+  font-size:24px;
+  margin:0;
+}
+
+.logout span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.logout span:after {
+   content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.logout span {
+  padding-right: 25px;
+}
+
+.logout span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.logout:hover span {
+  padding-right: 25px;
+}
+
+.logout:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+a {
+  background-color: #1c87c9;
+  border: none;
+  color: white;
+  padding: 50px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100%;
+  font-family: Dalelands;
+  /* font-size: 200%; */
+  width: 100%;
+  /* font-size: 2vw;
+  font-size: relative; */
+  font-size: 3vh;
+}
+
+h3 {
+  color: white;
+  text-align: center;
+  font-size: 200%;
+  font-family: Dalelands;
+  margin-top: 5px;
+}
+
+.dark{
+  /* background-color: black; */
+  display: initial;
+  margin: initial;
+  cursor: pointer;
+  width:50%;
+  box-sizing: border-box;
+  float: right;
+  background: linear-gradient(to right, rgba(0,0,0,0.4), #555F85), url("Images/EvilDude2.jpg");
+  /* background-image: url("Images/Evildude2.jpg"); */
+  background-repeat: no-repeat;
+  background-position: left center;
+  color: white;
+  text-shadow: 1px 1px #000000;
+  margin-bottom: 0%;
+  position: relative;
+  height: 100%;
+   /* #a83232 */
+}
+
+.logs{
+   background: linear-gradient(to right, #617DEF, rgba(0,0,0,0.4)), url("Images/EvilDude1.jpg");
+   /* background-image:url("Images/Evildude1.jpg"); */
+   background-position: right center;
+   background-repeat: no-repeat;
+   display: initial;
+   margin: initial;
+   cursor: pointer;
+   width: 50%;
+   box-sizing: border-box;
+   margin: 0 auto;
+   float: left;
+   /* box-shadow: 1px; */
+   /* z-index: 1; */
+   /* background-color: red; */
+   text-shadow: 1px 1px #000000;
+   margin-bottom: 0%;
+   position: absolute;
+   /* top: 0;
+   bottom: 0; */
+   /* position: fixed; */
+}
+
+.portal{
+  background-image: url("Images/Jelly.jpg");
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-shadow: 1px 1px #000000;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.QI{
+  background-image: url("Images/ship.jpg");
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-shadow: 2px 2px #000000;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.banpage{
+  background-image: url("Images/banHorse.jpg");
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-shadow: 1px 1px #000000;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.SM{
+  background-image: url("Images/column.jpg");
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-shadow: 1px 1px #000000;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.ES{
+  background-image: url("Images/bloodmoonbanner.jpg");
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-shadow: 1px 1px #000000;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.VPN{
+  background-image: url("Images/beholder.jpg");
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-shadow: 1px 1px #000000;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.LN{
+  background-image: url("Images/dragon.jpg");
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-shadow: 1px 1px #000000;
+  margin-left: 0;
+  margin-right: 0;
+}
+.DM{
+  background-image: url("Images/dmref.jpg");
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-shadow: 1px 1px #000000;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.faction{
+  background-image: url("Images/Bendir.jpg");
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-shadow: 1px 1px #000000;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.casetool{
+  background-image: url("Images/DesertHead.jpg");
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-shadow: 1px 1px #000000;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.weblog{
+  background-image: url("Images/mith.jpeg");
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-shadow: 1px 1px #000000;
+  margin-left: 0;
+  margin-right: 0;
+}
+.underlay1{
+  /* position:absolute;
+  float: left;
+  width:50%;
+  background-color:rgba(0, 0, 0, 0.85);
+  z-index:9999;
+  color:white; */
+}

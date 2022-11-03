@@ -1,0 +1,307 @@
+#portal-contents{
+    position: relative;
+    top: 0;
+    height: fit-content;
+    margin-bottom: 70px;
+    margin-top: 20px;
+}
+.contents {
+    background-color: #f2f2f2;
+    box-shadow: 1px 1px 7px rgba(0,0,0,0.2);
+    margin: 0 auto;
+    min-width: 380px;
+    max-width: 90%;
+    width: fit-content;
+    height: calc(100% - 60px);
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-align: center;
+    justify-content: space-evenly;
+    font-family: 'Arial';
+}
+nav a {text-decoration: none; color: #b7b7b7; margin: 0 15px; padding-bottom: 3px; border-bottom: 1px solid rgba(0,0,0,0); transition: linear 0.5s; -moz-transition: linear 0.5s; -webkit-transition: linear 0.5s; font-weight: 300; font-size: 16px;}
+
+.img-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+/* Dark Theme */
+.ccm-page.dark-theme{
+    background-color: #2a2f34;
+}
+
+.dark-theme #header{
+    background-color: #42474f;
+    font-family: 'Open Sans', Helvetica, Verdana, Arial, sans-serif;
+}
+
+.dark-theme #header a{
+    color: #b7b7b7;
+}
+
+.dark-theme .filters .filter-button.active{
+    background-color: #42474f;
+    color: #b7b7b7;
+}
+
+.dark-theme .filters .filter-button{
+    background-color: #34383f;
+    color: #b7b7b7;
+    border-right: 1px solid #3f3f3f;
+}
+
+.dark-theme .contents{
+    background-color: #42474f;
+    color: #b7b7b7;
+}
+
+.dark-theme .portal-player-list {
+    border-right: 1px solid #3f3f3f;
+    border-left: 1px solid #3f3f3f;
+}
+
+.dark-theme .player-row {
+    background-color: #42474f;
+}
+
+.dark-theme .player-row td {
+    color: #b7b7b7;
+    border-left: 7px solid #676b72;
+    border-top: 7px solid #676b72;
+    border-right: 7px solid #2e3137;
+    border-bottom: 7px solid #2e3137;
+}
+
+.dark-theme .player-row td > div {
+    outline: 5px solid #42474f;
+}
+
+.dark-theme #footer {
+    background-color: #42474f;
+    color: #b7b7b7;
+}
+
+.dark-theme #footer a{
+    color: #b7b7b7;
+}
+
+.dark-theme .date-section{
+    background-color: #42474f;
+    color: #b7b7b7;
+}
+
+.dark-theme a {
+    color: #b7b7b7;
+}
+
+.dark-theme a:visited {
+    color: #b7b7b7;
+}
+
+.dark-theme a:active {
+    color: #b7b7b7;
+}
+/* End Dark Theme */
+
+@media screen and (max-width: 900px){
+    .contents {
+        width: 380px;
+    }
+}
+
+@media screen and (max-width: 1294px) and (min-width: 901px) {
+    .contents {
+        width: 764px;
+    }
+}
+
+.date-section {
+    width: 60%;
+    min-width: 430px;
+    height: 30px;
+    background-color: #fff;
+    box-shadow: 1px 1px 7px rgba(0,0,0,0.2);
+    margin: 0 auto 10px auto;
+    display: flex;
+    justify-content: center;
+    line-height: 30px;
+}
+
+.filters {
+    width: 60%;
+    min-width: 300px;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 1px 1px 7px rgba(0,0,0,0.2);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.filters .filter-button {
+    display: inline-block;
+    background-color: inherit;
+    padding: 10px;
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    color: #999;
+    border-right: 1px solid #f0f0f0;
+    font-weight: 300;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    height: 100%;
+}
+.filters .filter-button.active {
+    color: #404040;
+    background-color: #f2f2f2;
+}
+
+.portal-player-list {
+    width: 350px;
+    padding: 0 15px;
+    border-right: 1px solid #f0f0f0;
+    border-left: 1px solid #f0f0f0;
+    display: none;
+}
+.portal-player-list.active {
+    display:block;
+}
+
+.portal-player-list table {
+    width: 100%;
+    border-collapse:separate;
+    border-spacing: 5px;
+}
+
+.portal-player-list table thead th {
+    height: 120px;
+    border-radius: 5px;
+}
+.portal-player-list table thead td {
+    height: 30px;
+    font-size: 13px;
+}
+
+.portal-player-list table thead {
+    text-align: center;
+}
+
+.portal-player-list tbody tr {
+    background: #f2f2f2
+}
+
+.portal-player-list th {
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+    color: #FFF;
+}
+
+#player-1-list th {
+    background: url(http://portal.nwnarelith.com/images/surface_header.jpg) top left round;
+}
+
+#player-8-list th {
+    background: url(http://portal.nwnarelith.com/images/distant_shores_header.jpg) top left round;
+}
+
+#player-2-list th {
+    background: url(http://portal.nwnarelith.com/images/planes_header.jpg) top left round;
+}
+
+#player-5-list th {
+    background: url(http://portal.nwnarelith.com/images/arena_header.jpg) top left round;
+}
+
+.player-row td {
+    position: relative;
+    color: #555;
+    border-left: 7px solid #F9F9F9;
+    border-top: 7px solid #F9F9F9;
+    border-right: 7px solid #CACACA;
+    border-bottom: 7px solid #CACACA;
+}
+.player-row td > div {
+    height: 39px;
+    width: 100%;
+    outline: 5px solid #f2f2f2;
+    overflow: hidden;
+}
+.player-row td >div > div  {
+    position: absolute;
+    left: 45px;
+    top: 0;
+    width: calc(80% - 45px);
+}
+
+.player-row td div span {
+    width: 100%;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.player-row td a {
+    position: absolute;
+    right: 0px;
+    top: calc(50% - 25px);
+    width: 50px;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.portal-player-list td img {
+    position: relative;
+    left: 0;
+    top: 0;
+    /*height: 50px;*/
+    height: 40px;
+}
+.player-name {
+    font-style: italic;
+    color: #888;
+}
+.character-name {
+    font-weight: bold;
+}
+
+
+a {
+    color: #555;
+    font-weight: bold;
+}
+
+a:visited {
+    color: #555;
+    font-weight: bold;
+}
+a:active {
+    color: #555;
+    font-weight: bold;
+}
+
+.badge{
+    all: initial;
+    outline: 0px !important;
+    position: relative;
+    height: 50px !important;
+    width: 50px;
+    border: 0 0 0 0 transparent;
+}
+
+.badge img{
+    all: initial;
+    height: 20px !important;
+    width: 20px;
+}
