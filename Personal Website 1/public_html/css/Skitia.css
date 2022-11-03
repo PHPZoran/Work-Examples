@@ -1,0 +1,1473 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+      list-style-type: disc;
+  
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+  
+body {
+	line-height: 1;
+  font-family: "Lato", sans-serif;
+  color: AliceBlue;
+ 
+  
+}
+html{
+    background-color: navy;
+}
+  body,html{
+    overflow-x: hidden;
+  }
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+ 
+  #mainNav 
+  {
+    color: gold;
+    background-color:navy;
+     font-family: 'Cinzel Decorative', cursive;
+ 
+    
+   width:100%;
+    text-align:center;
+     margin: 0 auto;
+    border-bottom:2px solid gold;
+    padding:5px 0px;
+   
+  }
+
+  #mainNav a{
+    padding-right:20px;
+  }
+  #mainNav a:link{
+    text-decoration:none;
+  }
+
+    #logoLabel{
+font-size: 24px;
+     color:gold;
+   text-align:Center;
+      margin-left:25%;
+  }
+  #logoLabel:hover{
+    color:silver;
+    
+  }
+      .navLink{
+        display:none;
+  font-size: 37px;
+     color:gold;
+      margin-right:50px;
+  }
+  .navLink:hover{
+    color:silver;
+        text-decoration:underline;
+  }
+
+  #mobileBar{
+  font-size:32px;cursor:pointer;
+      float:right;
+      margin-right:5%;
+  }
+    #mobileBar:hover, #moibleBar:focus{
+ color:silver;
+  }
+
+.mobileOverlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(84,158,197);
+  background-color: rgba(0,0,0,0.8);
+  overflow-x: hidden;
+  transition: 0.5s;
+ 
+}
+.downloadOverlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+ 
+  background-color: rgb(0,0,0);
+  overflow-x: hidden;
+ 
+}
+  .homeHeader{
+    font-family: 'Cinzel Decorative', cursive;
+    margin-bottom: 5px;
+  
+    color: gold;
+        font-size: 40px;
+    
+  }
+  .logoUnderline{
+     text-decoration:underline;
+  }
+  .homeSubheader{
+    margin-left:15px;
+    margin-bottom: 5px;
+    
+    color: gold;
+        font-size: 24px;
+  }
+.mobileOverlay-content {
+   font-family: 'Cinzel Decorative', cursive;
+  color:blue;
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+white-space:nowrap;
+  overflow:hidden;
+}
+
+.mobileOverlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: gold;
+  display: block;
+  transition: 0.3s;
+}
+.downloadOverlay a{
+   padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: gold;
+  display: block;
+  
+}
+.downloadOverlay a:hover, .downloadOverlay a:focus{
+  color: #f1f1f1;
+}
+
+.mobileOverlay a:hover, .mobileOverlay a:focus {
+  color: #f1f1f1;
+  text-decoration:underline;
+}
+
+.mobileOverlay .overlayCloseBtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  text-decoration:none !important;
+}
+.downloadOverlay .overlayCloseBtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  text-decoration:none !important;
+}
+    #homePicture{
+     background-image: url("../images/NCadetGnomeAndFerretSmallTransparentPNG.png"), linear-gradient(Aliceblue,skyblue,lightblue,Aliceblue);
+      background-attachment: scroll;
+  background-repeat: no-repeat, repeat;
+   background-position: 120px 30px; 
+
+    background-size:cover;
+   height: 400px;
+      border-bottom:2px solid gold;
+     
+
+    
+
+  }  
+ 
+   #homeTopLeft{
+      text-align:left;
+    font-size: 18px;
+   margin-left: 12px;
+   padding-top: 45px;
+  color: gold;
+   
+    font-weight:bold;
+        text-shadow: -1px 0px navy, 0 1px navy, 1px 0 navy, 0 -1px navy;
+   
+
+    width: 500px;
+ 
+  }
+
+
+   #homeButton{
+    cursor: pointer;
+    margin-top: 10px;
+    width: 200px;
+   height: 30px;
+    font-size: 24px;
+    color:gold;
+    -webkit-appearance:none;
+  border-color: gold;
+      border-style: solid;
+  border-width: 1px;
+   margin-left:50px;
+    background-color:navy;
+
+  }
+  #homeButton:hover{
+ 
+    text-decoration:underline;
+    color:silver;
+  }
+  #homeContainer{
+   padding-top:15px;
+   padding-bottom:50px;
+        background-color:#25255E;
+    color:AliceBlue;
+  }
+        #homeContainer h1{
+      padding-bottom:15px;
+        font-size:36px;
+        text-align:Center;
+        padding-top:5px;
+          font-family: 'Cinzel Decorative', cursive;
+    color:gold;      
+          
+      }
+  #homeContainer p{
+    font-size:17px;
+   max-width: 120ch;
+
+    margin-left:15%;
+    margin-right:15%;
+  }
+ 
+ #homeContainer ul{
+    margin-left:18%;
+    margin-right:15%;
+    display: block;
+    font-size:17px;
+     
+  }
+
+      #homeMods
+    {
+      font-size: 48px;
+      width:100%;
+      float:left;
+      margin-top:0px;
+      padding-top:5px;
+      padding-bottom:5px;
+      margin-right:50px;
+    
+      background-image:linear-gradient(purple,purple,navy, black);
+    }
+ 
+  #homeMods h1{
+    text-align:center;
+    margin-left:0px;
+  
+   
+    font-family: 'Cinzel Decorative',cursive;
+    color:gold;
+    text-decoration:underline;
+    padding-bottom:25px;
+  }
+div.homeGallery:hover {
+  
+  -webkit-filter: brightness(150%);  /* Safari */
+  filter: brightness(150%);
+
+  
+  }
+  #homeGalleryLeft{
+  /*  margin-left:150px;*/
+
+  }
+  #homeGalleryLeft a{
+    text-decoration:none;
+  }
+
+  
+    .homeGallery
+    {
+     padding:20px;
+
+     text-decoration:none;
+      float:left;
+      margin-left:20%;
+    }
+
+  .homeGallery img{
+    width:200px;
+    height:350px;
+    
+    border: 3px solid #341807;
+  }
+  
+  .homeGalleryDesc{
+   font-size: 16px;
+    color:gold;
+      text-align:center;
+  }
+  
+  .homeGalleryName{
+        font-family: 'Cinzel Decorative',cursive;
+    color:gold;
+    font-size:24px;
+    text-align:center;
+  }
+
+  .clearFloats{
+    clear:both;
+  }
+
+  footer{
+      
+    padding-top:30px;
+    padding-bottom:90px;
+    width:100%;
+    background-color:black;
+    text-align:center;
+     font-family: 'Cinzel Decorative', cursive;
+     text-align:center;
+    color:gold;
+    border-top:2px solid gold;
+  }
+  #footHead a{
+     
+   
+    margin-bottom: 5px;
+  
+        font-size: 46px;
+  }
+  
+ 
+    #footContent{
+    margin-top:5px;
+    text-align:center;
+ 
+
+   
+        font-size: 13px;
+  }
+ 
+
+#modFootHead{
+  text-align:Center;
+
+        font-family: 'Cinzel Decorative', cursive;
+      font-size:48px;
+       padding-top:20px; 
+     text-decoration:underline;
+  }
+footer a{
+  color:gold;
+        text-decoration:none;
+}
+footer a:hover{
+  color:silver;
+}
+  #footContent a:hover,.modFoot a:hover{
+         text-decoration:underline;
+    color:silver;
+  }
+
+ .quick-button{
+    background-color:#000040;
+    border: 1px solid aliceblue;
+    border-radius:25px;
+    color:#F0F8FF;
+    width:100%;
+   min-width:180px;
+    max-width:250px;
+    height:50px;
+     cursor: pointer;
+   font-size:22px;
+  font-family: 'Cinzel Decorative', cursive;
+    margin-top:5px;
+    margin-bottom:10px;
+   -webkit-appearance:none;
+  }
+  .quick-button:hover{
+    color:gold;
+    border-color:gold;
+    text-decoration:underline;
+  }
+
+  .quick-action{
+    
+    text-align:center;
+   margin-top:5px;
+    text-decoration:none ;
+  }
+
+    #leftDownload{
+    position:fixed;
+    left:5%;
+    display:none;
+    top:25%;
+    
+  }
+  #leftDownload img{
+    width:150px;
+    height:150px;
+    
+  }
+   #rightDownload{
+     position:fixed;
+     right:5%;
+     top:25%;
+     display:none;
+  
+  }
+  #rightDownload img{
+    width:150px;
+     height:150px;
+    
+  }
+
+#disabled{
+  background-color:grey;
+}
+#disabled:hover{
+  cursor:not-allowed;
+  background-color:grey;
+  border-color:AliceBlue;
+  text-decoration:none;
+  color:AliceBlue;
+}
+#mod-bio{
+  font-style: italic;
+}
+  #news-v-body {
+    background-color:navy;
+    text-align:center;
+   padding:10px 18% !important;
+     color:AliceBlue;
+ white-space: pre-wrap; 
+    font-size:18px;
+ 
+ 
+  }
+
+    #newsInfo h2{
+   
+      padding-top:0px;
+         font-family: 'Cinzel Decorative', cursive;
+      text-align:center;
+      font-size:16px;
+      font-weight:bold;
+    }
+    #newsInfo h3{
+      color:white;
+     font-size:16px;
+     text-align:center;
+      display:none;
+    }
+#news-body{
+
+}
+  @media screen and (min-width: 600px) {
+  
+  
+    #mobileBar{
+      margin-right:10%;
+
+     font-size:32px;
+    }
+    #homeButton{
+      margin-left:20%;
+    }
+ 
+  #mainNav{
+ text-align:center;
+    margin-top:5px;
+    padding-bottom:5px;
+  }
+   
+   #homePicture{
+           background-position: 200px -100px, 0px 0px; 
+      height: 430px;
+        }
+    .homeHeader{
+      font-size:50px;
+    }
+    .homeSubheader{
+      font-size:36px;
+    }
+    #homeTopLeft{
+     text-align:left;
+    font-size: 18px;
+   margin-left: 12px;
+
+  }
+    #footHead {
+      padding-top:20px !important;
+    }
+    #footHead a{
+      font-size:60px;
+      
+    }
+    #footContent{
+      font-size:16px;
+      margin-left:15px;
+    }
+     #newsInfo h2{
+    font-size:17px;
+  }
+      #newsInfo h3{
+        font-size:17px;
+      display:block !important;
+    }
+     #leftDownload{
+ 
+    left:25%;
+  
+  top:50%;
+ 
+  }
+  #leftDownload img{
+ 
+ left:24%;
+  top:35%;
+    position:fixed;
+  }
+   #rightDownload{
+ 
+     right:24%;
+ 
+   top:50%;
+
+  }
+  #rightDownload img{
+ 
+     position:fixed;
+     right:21%;
+   top:35%;
+  }
+
+}  
+@media screen and (min-width: 768px) {
+  #minNav{
+    display:inline;
+  }
+  #logoLabel{
+          margin-right:0px;
+    margin-left:0px;
+  }
+  
+
+   #homePicture{
+           background-position: 200px -200px, 0px 0px; 
+      height: 500px;
+        }
+
+
+           #mobileBar{
+   display:none;
+  }
+ 
+        .navLink{
+    font-size: 16px;
+    display:inline;
+      margin-right:6px;
+  }
+
+
+       #newsInfo h2{
+    font-size:18px;
+  }
+      #newsInfo h3{
+       font-size:18px;
+    }
+     #leftDownload{
+  
+    left:20%;
+  
+  
+ 
+  }
+  #leftDownload img{
+    width:160px;
+    height:160px;
+ left:21%;
+    
+    
+  }
+   #rightDownload{
+ 
+     right:20%;
+ 
+  
+
+  }
+  #rightDownload img{
+    width:160px;
+    height:160px;
+ right:21%;
+    
+  }
+ 
+}  
+
+  
+      @media screen and (min-width: 996px){
+
+       #logoLabel{
+    font-size: 28px;
+
+      margin-left:25px;
+      margin-right:25px;
+  }
+ 
+        
+          #mainNav{
+ text-align:left;
+  }
+          #navContact{
+
+line-height:32px;
+    
+  }
+      .navLink{
+    font-size: 20px;
+    display:inline;
+      margin-right:10px;
+  }
+           #homeButton{
+      margin-left:0%;
+    }
+  
+        #homePicture{
+           background-position: 400px -400px, 0px 0px; 
+           background-attachment: fixed;
+           height: 700px;
+        }
+          #homeTopLeft{
+    
+   padding-top: 90px;
+  color: gold;
+    font-size: 36px;
+    font-weight:bold;
+        text-shadow: -1px 0px navy, 0 1px navy, 1px 0 navy, 0 -1px navy;
+    margin-left: 200px;
+
+    width: 500px;
+    text-align:center;
+  }
+     #leftDownload{
+  
+    left:25%;
+  
+  
+ 
+  }
+  #leftDownload img{
+    width:160px;
+    height:160px;
+ left:31%;
+    
+    
+  }
+   #rightDownload{
+ 
+     right:25%;
+ 
+  
+
+  }
+  #rightDownload img{
+    width:160px;
+    height:160px;
+ right:22%;
+    
+  }
+#news-v-body {
+   
+   padding:10px 12%;
+  
+ 
+ 
+  }
+            #newsInfo h2{
+   
+      padding-top:5px;
+         font-family: 'Cinzel Decorative', cursive;
+      text-align:center;
+      font-size:32px;
+      font-weight:bold;
+    }
+    #newsInfo h3{
+    
+     font-size:32px;
+
+    }
+  }
+    @media screen and (min-width: 1200px){
+    #logoLabel{
+font-size: 37px;
+
+      margin-left:50px;
+      margin-right:50px;
+  }
+
+      .navLink{
+            font-size: 24px;
+
+      margin-right:10px;
+
+  }
+                #navContact{
+
+line-height:45px;
+    
+  }
+             #homePicture{
+           background-position: 450px -400px; 
+                 height: 700px;
+        }
+
+      #homeGalleryLeft{
+        margin-left:20%;
+      }
+      #homeGalleryBottom1{
+        margin-left:31%;
+      }
+               #homeGalleryBottom2{
+        margin-left:0px;
+                 
+      }
+        #newsInfo{
+       min-height:200px;
+          max-height:250px;
+
+     }
+     .flex-container{
+         margin-left:15%;
+  margin-right:15%;
+     }
+     .flex-container img {
+      
+     min-height:200px;
+       min-width:120px;
+     }
+         #leftDownload{
+  
+    left:24%;
+  
+  
+ 
+  }
+  #leftDownload img{
+    width:180px;
+    height:180px;
+ left:25%;
+    top:30%;
+    
+    
+  }
+   #rightDownload{
+ 
+     right:25%;
+ 
+  
+
+  }
+  #rightDownload img{
+        width:180px;
+    height:180px;
+ right:25%;
+     top:30%;
+  }
+  }
+
+    @media screen and (min-width: 1500px){
+      #mainNav a{
+        padding-left:60px;
+      }
+         #homeGalleryBottom1{
+       margin-left:0px;
+      }
+
+             #homePicture{
+           background-position: 450px -650px; 
+                  height: 700px;
+        }
+
+      .homeGallery{
+        margin-left:0px;
+      }
+        .homeGallery img{
+    width:240px;
+    height:400px;
+    
+    border: 3px solid #341807;
+  }
+      #homeGalleryLeft{
+        margin-left:3.5%;
+      }
+      #homeGalleryBottom2{
+        margin-right:4%;
+      }
+           #newsInfo{
+       min-height:250px;
+     }
+            .flex-container img {
+      
+     min-height:250px;
+     min-width:150px;         
+     }
+           #leftDownload{
+  
+    left:25%;
+  
+  
+ 
+  }
+  #leftDownload img{
+    width:200px;
+    height:200px;
+ left:25%;
+    top:30%;
+    
+    
+  }
+   #rightDownload{
+ 
+     right:25%;
+ 
+  
+
+  }
+  #rightDownload img{
+      width:200px;
+    height:200px;
+ right:25%;
+     top:30%;
+  }
+  }
+  .navbar {
+
+  border:none;
+  width:100%;
+ background: #796f9e;
+  height:40px;
+  border-bottom: 5px solid #8A83A3;
+}
+
+
+/* Links inside the navbar */
+.navbar a {
+
+  float: left;
+  margin-left:90px;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+     color:  AliceBlue; font: bold 20px Helvetica, Arial, Sans-Serif;
+           text-shadow: 1px 1px #0A3362, 2px 2px #0A3362, 3px 3px #0A3362;
+}
+
+
+/* Change background on mouse-over */
+.navbar a:hover {
+
+ background: none;
+  color: 	#48D1CC;
+
+}
+  #navleft {
+
+    margin-right:50px;
+}
+  #mainContent {
+  height: 50px;
+  background-color:black;
+}
+
+/* Main content */
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+  #mainImage {
+width: 100%;
+    margin-top:-300px;
+
+
+  }
+  #contactHead{
+     font-family: 'Cinzel Decorative', cursive;
+   text-align:center;
+    
+   margin-bottom:25px;
+    text-decoration:underline;
+    color: gold;
+        font-size: 40px;
+  }
+    #contactText{
+    
+   text-align:center;
+   padding-bottom:25px;
+  
+    color: gold;
+      
+  }
+  #contactBackground{
+        background-image: url("../images/NCadetGnomeAndFerretSmallTransparentPNG.png"), linear-gradient(Aliceblue,skyblue,lightblue,Aliceblue);
+   background-repeat: no-repeat, repeat;
+     background-position: 1000px -250px; 
+    padding-bottom:50px;
+    padding-top:50px;
+ 
+  background-attachment: fixed;
+
+  
+    
+  }
+#centerContact {
+  padding-top:20px;
+position:static;
+  margin: 0px auto;
+  width:50%;
+  max-width:500px;
+  min-width:325px;
+  text-align: center;
+color:gold;
+background-color:navy;
+  border: 2px solid gold;
+}
+
+
+#contactSubmit 
+{ 
+  margin-top:20px;
+width: 55%; 
+  color:  gold; 
+  background-color: #000040;
+  border: solid 2px gold;
+  border-radius:25px;
+   box-sizing: border-box;
+  cursor: pointer;
+  margin-bottom: 50px;
+   height: 60px;
+    font-size: 200%;
+    -webkit-appearance:none;
+   
+}
+#contactSubmit:hover{
+  color:silver;
+  text-decoration:underline;
+  border-color:silver;
+}
+
+
+.contactInput {
+  color:navy;
+    width: 55%;
+  height: 25px;
+margin-top:15px;
+  margin-bottom:15px;
+text-align:left;
+  border:2px solid gold;
+  border-radius: 5px;
+}
+.contactInput:focus {
+  background-color: #D79752;
+  border-color:silver;
+}
+#contactMessage{
+  margin-top:20px;
+   width: 55%;
+  resize: none;
+  border:2px solid gold;
+  border-radius: 5px;
+  color:black;
+}
+#contactMessage:focus {
+  background-color: #D79752;
+  color:navy;
+  border-color:silver;
+}
+
+#aboutPage{
+   margin:0px;
+    padding:0px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #E9E8E3;
+  }
+
+
+#modsPage{
+   margin:0px;
+    padding:0px;
+  background-image: url("../images/ModsImage.png");
+    background-color: rgb(143,114,87);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  }
+  .topLeft {
+  position: absolute;
+  top: 100px;
+  left: 32px;
+     color:  AliceBlue; font: bold 24px Helvetica, Arial, Sans-Serif;
+           text-shadow: 1px 1px #0A3362, 2px 2px #0A3362, 3px 3px #0A3362;
+}
+.
+  .mod-label{
+    font-size: 48px;
+      margin-right:120px;
+}
+}
+
+
+.character:hover {
+  opacity: 0.5;
+  -webkit-filter: sepia(100%);
+  filter: sepia(100%);
+   text-decoration: none;
+}
+
+#modPicture 
+{
+
+ margin-top: 160px;
+  margin-left: 25px;
+  padding: 10px;
+color:rgb(175,169,169);
+      vertical-align: top;
+    display: inline-block;
+}
+
+#modPictureHeader{
+pointer-events: none;
+  text-align: center;
+margin-top: -440px;
+
+  color:  AliceBlue; font: bold 64px Lora, Serif;
+           text-shadow: 2px 2px #8A83A3, 4px 4px #8A83A3, 6px 6px #8A83A3;
+}
+
+
+
+  #characterPicture 
+{
+  border:15px outset  #8A83A3;
+   border-radius: 8px;
+  height: 403px;
+  width: 259px;
+
+}
+.caption {
+    display: block;
+   color:  AliceBlue; font: bold 32px Lora, Serif;
+           text-shadow: 2px 2px #8A83A3, 4px 4px #8A83A3, 6px 6px #8A83A3;
+margin-top: -60px;
+  margin-left: 45px;
+
+
+}
+
+
+
+
+   
+ 
+.proficiencyTable{
+  float:right;
+  margin-right: 25px;
+  margin-top: -470px;
+
+
+
+}
+@media (min-width: 1367px) {
+.proficiencyTable{
+    margin-right: 100px;
+
+
+
+
+}
+}
+
+.modTable{
+
+    border-collapse: collapse;
+
+  width: 300px;
+  height: 250px;
+  text-align: center;
+}
+
+.modTable th{
+  font-size: 24px;
+}
+
+.modTable table, th, td {
+  background-color: rgba(138,131,163,0.5);
+  color: white;
+}
+
+.modTable th, td, tr {
+   border: 3px solid AliceBlue;
+}
+
+#modIntro{
+  border-bottom: 5px outset rgba(138,131,163,0.5);
+   border-top: 5px outset rgba(138,131,163,0.5);
+  text-align: center;
+    color:  AliceBlue; font: bold 64px Lora, Serif;
+           text-shadow: 2px 2px #8A83A3, 4px 4px #8A83A3, 6px 6px #8A83A3;
+  background-color:#8F7257;
+}
+#modIntro p{
+  text-align: left;
+    color:  AliceBlue; font: bold 20px Lora, Serif;
+         text-shadow: none;
+    margin-right: 12.5%;
+  margin-left: 12.5%;
+}
+.modHeaderButtons{
+    color:  AliceBlue; font: bold 20px Lora, Serif;
+         text-shadow: none;
+  background-color: #8A83A3;
+width: 100%;
+
+ height: 50px;
+  
+
+}
+.modHeaderButtons:hover {
+  background-color: #8F7257;
+  cursor: pointer;
+
+}
+.modSecondButtons{
+  margin-top:5px;
+
+}
+#modButtonSpace{
+  margin-top: 55px;
+}
+button:active {
+
+ 
+  transform: translateY(2px);
+}
+
+#scrollBtn {
+ display:none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 1;
+  font-size: 18px;
+ border: 2px outset aliceblue;
+  outline: none;
+  background-color:  #000040;
+  color: aliceblue;
+  cursor: pointer;
+    padding: 15px;
+  border-radius: 20px;
+}
+
+#myBtn:hover {
+  background-color:#8F7257;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+
+/* Modal Content/Box */
+.modal-content {
+  background-color:  #8A83A3;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 5px outset AliceBlue;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+.modal-row{
+  text-algin:left;
+  border-top: 1px solid MistyRose;
+color: AliceBlue;
+  height: 40px;
+}
+#modal-row-last{
+   border-bottom: 1px solid MistyRose;
+}
+.modal-row i{
+  color: 	#778899;
+}
+
+.download-header {
+  float: left;
+  color: AliceBlue;
+  font-size: 28px;
+  font-weight: bold;
+}
+.download-icon {
+  float: right;
+ color: 	AliceBlue;
+  width: 50px;
+  font-size: 28px;
+  font-weight: bold;
+  margin: auto;
+}
+.modal-row a:hover {
+
+  background: none;
+  color: 	AliceBlue;
+
+}
+
+.modal-row a{
+   margin-right: 80px;
+}
+
+.modal-row button{
+  width:100px;
+  background-color: AliceBlue;
+  color: AliceBlue;
+  border: 2px outset MistyRose;
+  cursor: pointer;
+}
+
+/* The Close Button */
+.close {
+  color: AliceBlue;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+ 
+    #aboutContainer{
+      background-image: url("../images/beamdog-666x374.jpg");
+    
+      background-size:cover;
+    background-repeat:none;
+   
+      width:100%;
+      padding-bottom:10px;
+    }
+    #aboutContainer h1{
+      color:gold;
+           font-family: 'Cinzel Decorative', cursive;
+      padding-top:5%;
+      font-size:48px;
+      text-align:center;
+      padding-bottom:2%;
+
+      width:100%;
+     
+       text-decoration:underline;
+                   
+
+
+   
+    }
+    #aboutContainer h2{
+           font-family: 'Cinzel Decorative', cursive;
+      font-size:24px;
+       text-decoration:underline;
+      padding-bottom:3%;
+      padding-top:3%;
+    }
+  
+    #aboutRight{
+      padding: 1% 5% 1% 5%;
+      font-size:16px;
+      width:55%;
+
+      color:gold;
+       padding-bottom:50px;
+      background-color:rgba(37,37,94,0.9);
+      border:1px solid AliceBlue;
+      color:AliceBlue;
+      margin:0 auto 100px auto;
+    }
+    #aboutRight a{
+      color:orange;
+    }
+    #aboutRight a:hover{
+      color:silver;
+    }
+#aboutRight li{
+  list-style-position:inside;
+}
+    #newsNavy{
+
+   background-color:navy;
+    }
+  #newsPage{
+   margin:0px;
+
+    padding:0px;
+     
+       background-image: url("../images/NewsImage.jpg");
+      background-attachment:fixed;
+        background-repeat: no-repeat;
+  background-size: cover;
+
+
+  height:500px;
+  border-bottom:2px solid gold;
+  }
+    #news-container{
+          padding-top:12.5%;
+      padding-bottom:1%;
+           width:250px;
+         margin: 0 auto 25% auto;
+    }
+    #newsPage h1{
+      text-align:Center;
+      color:gold;
+        font-family: 'Cinzel Decorative', cursive;
+      font-size:48px;
+       padding-top:5px;
+      padding-bottom:5px;
+     text-decoration:underline;
+   
+ 
+   
+    }
+
+    #newsHeader{
+      padding-left:25%;
+    }
+.flex-container {
+  display: flex;
+  align-items: stretch;
+ margin-top:5px;
+ 
+}
+
+
+      
+    .flexcontainer > div{
+       justify-content: center;
+
+      
+    }
+#newsInfo {
+  background-color: 	#25255E;
+  border:1px solid gold;
+  color: white;
+  width: 25%;
+  margin: 10px;
+  position:relative;
+      line-height:40px;
+ 
+  font-size: 30px;
+}
+
+     .newsDate{
+      position:absolute;
+       right:5px;
+       bottom:5px;
+       font-size:16px;
+    }
+    #newsInfo a{
+      text-decoration:none;
+      color:gold;
+    }
+    #newsInfo a:hover{
+      color:silver;
+      text-decoration:underline;
+    }
+
+    .flex-container img {
+       border:1px solid gold;
+      width:110px;
+        height:170px;
+       margin-top:10px;
+      margin-left:10px;
+      margin-bottom:10px;
+    }
+
+    #newsNav{
+     text-align:center;
+        font-family: 'Cinzel Decorative', cursive;
+      padding-bottom:1%;
+ 
+    }
+    #newsNav a{
+       color:gold;
+    
+      
+    }
+    #newsPre{
+      float:left;
+      margin-left:5%;
+        margin-bottom:1%;
+    }
+    #newsNext{
+      float:right;
+        margin-right:5%;
+      margin-bottom:1%;
+    }
+    #newsNav a:hover{
+      color:silver;
+    }
+  .login-error{
+    color:red !important;
+  }
+  
