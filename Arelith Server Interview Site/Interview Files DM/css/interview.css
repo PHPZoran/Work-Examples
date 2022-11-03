@@ -1,0 +1,450 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+      
+  
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+  
+body {
+	line-height: 1;
+  font-family: "Lato", sans-serif;
+  color: AliceBlue;
+  background-color:#b76e79
+}
+
+  body,html{
+    overflow-x: hidden;
+  }
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+ 
+
+  
+  
+
+  
+ .contactInput {
+  color:navy;
+    width: 50%;
+  height: 25px;
+margin-top:15px;
+  margin-bottom:15px;
+text-align:left;
+  border:2px solid gold;
+  border-radius: 5px;
+}
+.contactInput:focus {
+  background-color: #D79752;
+  border-color:silver;
+}
+#contactSubmit 
+{ 
+  margin-top:20px;
+width: 50%; 
+  color:  gold; 
+  background-color: #000040;
+  border: solid 2px gold;
+  border-radius:25px;
+   box-sizing: border-box;
+  cursor: pointer;
+  margin-bottom: 50px;
+   height: 60px;
+    font-size: 200%;
+    -webkit-appearance:none;
+   
+}
+#contactSubmit:hover{
+  color:silver;
+  text-decoration:underline;
+  border-color:silver;
+}
+
+ #contactBackground{
+
+    padding-bottom:50px;
+    padding-top:50px;
+ 
+
+
+  
+    
+  }
+#centerContact {
+  padding-top:20px;
+position:static;
+  margin: 0px auto;
+  width:50%;
+  max-width:500px;
+  min-width:325px;
+  text-align: center;
+color:gold;
+background-color:navy;
+  border: 2px solid gold;
+}
+
+  #contactHead{
+     font-family: 'Cinzel Decorative', cursive;
+   text-align:center;
+    
+   margin-bottom:25px;
+    text-decoration:underline;
+    color: gold;
+        font-size: 40px;
+  }
+.modTable table, th, td {
+  background-color: rgba(138,131,163,0.5);
+  color: white;
+}
+
+
+
+
+button:active {
+
+ 
+  transform: translateY(2px);
+}
+
+  .login-error{
+    color:red !important;
+  }
+    #interviewContainer{
+     background: rgba(0, 0, 80, 0.9);
+      width:78%;
+      padding-bottom:10px;
+      text-align:center;
+      margin:0 auto;
+    }
+    #interviewContainer h1{
+      color:gold;
+           font-family: 'Cinzel Decorative', cursive;
+      padding-top:5%;
+      font-size:48px;
+      text-align:center;
+      padding-bottom:2%;
+
+      width:100%;
+     
+       text-decoration:underline;  
+    }
+    #interviewContainer h2{
+      color:gold;
+           font-family: 'Cinzel Decorative', cursive;
+      font-size:36px;
+      text-align:center;
+      padding-bottom:2%;
+
+      width:100%;
+     
+       text-decoration:underline;  
+    }
+#interviewContainer button{
+  margin:0 auto;
+}
+    #interviewQuestion{
+     background: rgba(0, 0, 80, 0.9);
+      width:78%;
+      margin: 0 auto;
+      padding-bottom:10px;
+      text-align:center;
+    }
+    #interviewQuestion h1{
+      color:gold;
+           font-family: 'Cinzel Decorative', cursive;
+      padding-top:1%;
+      font-size:36px;
+      text-align:center;
+      padding-bottom:2%;
+
+      width:100%;
+     
+       text-decoration:underline;  
+    }
+#interviewQuestion p{
+  color:AliceBlue;
+  text-align:left;
+  margin-left:25%;
+  margin-right:25%;
+  line-height:24px;
+} 
+   #addContainer{
+     background: rgba(0, 0, 80, 0.9);
+        margin: 0 auto;
+      width: 50%;
+      padding-bottom:10px;
+      text-align:center;
+    }
+    #addContainer h1{
+      color:gold;
+           font-family: 'Cinzel Decorative', cursive;
+      padding-top:5%;
+      font-size:48px;
+      text-align:center;
+      padding-bottom:2%;
+
+      width:100%;
+     
+       text-decoration:underline;  
+    }
+
+#interviewContainer button{
+  margin:0 auto;
+}
+
+#dataTable
+{
+  border-bottom: 10px ridge black;
+  background: rgba(0, 0, 80, 0.73);
+  text-align:center;
+  margin:0 auto;
+max-width:100%;
+ 
+  
+  border-spacing: 0px;
+} 
+table{
+  overflow:scroll;
+}
+th{
+	border: 10px ridge  black;
+	vertical-align:middle;
+	color:gold;
+	font-size: 20px;
+}
+
+table>thead {
+  background-color: navy;
+
+} 
+td{
+  height:80px;
+  max-width:350px;
+}
+tr, td { padding: 0;text-align:center; vertical-align: middle; }
+td>textarea{
+   
+ 
+  height:90%;
+ 
+  resize:none;
+  margin:0 auto;
+ 
+}
+td{
+	color:gold;
+	border-bottom: 10px inset black;
+	border-left: 10px inset black;
+  border-right: 10px inset black;
+ 
+}
+table>tbody {
+  background-color: navy;
+   font-size: 16px;
+   text-align: center;
+  
+} 
+
+.red{
+  background-color:red;
+}
+
+    .addApplicantQuestion{
+     background: rgba(0, 0, 80, 0.9);
+       margin: 0 auto;
+      width: 50%;
+      padding-bottom:10px;
+      text-align:center;
+    }
+     .addApplicantQuestion h1{
+      color:gold;
+           font-family: 'Cinzel Decorative', cursive;
+      padding-top:1%;
+      font-size:36px;
+      text-align:center;
+      padding-bottom:2%;
+
+      width:100%;
+     
+       text-decoration:underline;  
+    }
+     #addContainer h2{
+      color:gold;
+           font-family: 'Cinzel Decorative', cursive;
+      padding-top:1%;
+      font-size:36px;
+      text-align:center;
+      padding-bottom:2%;
+    
+      width:100%;
+     
+       text-decoration:underline;  
+    }
+#questionInput{
+
+  margin:0 auto 0 auto; 
+   
+  resize: none;
+  border:2px solid gold;
+  border-radius: 5px;
+  color:black;
+}
+#questionInput:focus {
+  background-color: #D79752;
+
+  color:navy;
+  border-color:silver;
+}
+.error{
+    color:red !important;
+  }
+#ApplicantField
+{min-width:300px;}
+.a{
+ list-style-type: upper-roman;
+  text-align:left; 
+  width:100px;
+  margin: 0 auto;
+  list-style-position: inside;
+}
+#list_question 
+{ list-style-type: upper-roman;
+  text-align:left; 
+  width:95%;
+  margin: 0 auto;
+  list-style-position: inside;
+}
+
+#tableContainer{
+
+  overflow:auto;
+}
+.yes{
+  background-color:green;
+}
+.no{
+  background-color:red;
+} 
+#name{
+  margin: 0 auto;
+  width: 50%;
+} 
+button{
+  cursor:pointer;
+}
+button:hover{
+  background-color:navy;
+  color:AliceBlue;
+}
+ input[type = submit] { 
+    cursor:pointer;
+} 
+#submitAll
+{ 
+  margin:20px auto;
+
+  text-align:center;
+  color:  gold; 
+
+
+
+  cursor: pointer;
+
+
+   
+} 
+#submitAll button{
+  width:5%;
+  font-size:19px;
+  color:gold;
+  background-color:#454292;
+  border-radius:100%;
+  
+} 
+#submitAll button:hover{
+  background-color:navy;
+  color:silver;
+}
+
+.userinfo {
+  color: white;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 150%;
+  width: 100%;
+  padding: 5px;
+}
+
+.logout{
+  text-align: center;
+  cursor: pointer;
+  font-size:24px;
+  margin:0;
+}
+
+.logout span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.logout span:after {
+   content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.logout span {
+  padding-right: 25px;
+}
+
+.logout span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.logout:hover span {
+  padding-right: 25px;
+}
+
+.logout:hover span:after {
+  opacity: 1;
+  right: 0;
+}
